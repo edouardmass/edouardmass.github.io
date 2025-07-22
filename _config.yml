@@ -6,7 +6,7 @@ baseurl: "" # subpath of the site, e.g. "/blog" (leave it blank "" if you're sit
 description: > # description of the site (multiple lines allowed)
   A minimal, optimized, lightweight design for static sites.
 
-git_repo: https://github.com/edouardmass/edouardmass.github.io.git
+git_repo: edouardmass/edouardmass.github.io
 
 permalink: /:slug
 

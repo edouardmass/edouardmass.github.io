@@ -64,7 +64,9 @@
           {% if site.git_repo %}
             <a href="https://github.com/{{ site.git_repo }}">@{{ site.git_repo }}</a> —
           {% endif %}
-          <a href="https://yree.io/mold">molded</a> for you 🫶
+          {% if site.email %}
+          <a href="mailto:{{ site.email}}">contact 📧</a>
+          {% endif %}
       {%- endif -%}
     </div>
   </footer>
