@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta tags -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Title -->
+    <title>mold</title>
+    <!-- SEO and feed meta tags -->
+    <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="mold" /><!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-i con" href="/favicon.svg" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/main.css" />
+    <!-- TODO: Load scripts only when required -->
+    <!-- Mathjax -->
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
+    <!-- Mermaid -->
+    <script src="https://unpkg.com/mermaid/dist/mermaid.min.js" async></script><script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const emojiRegex = /([\u{1F600}-\u{1F64F}\u{1F300}-\u{1F5FF}\u{1F680}-\u{1F6FF}\u{1F700}-\u{1F77F}\u{1F900}-\u{1F9FF}\u{2600}-\u{26FF}\u{2700}-\u{27BF}\u{2702}\u{1F004}\u{1F0CF}\u{1F191}-\u{1F251}\u{1F1E6}-\u{1F1FF}\u{200D}\u{2620}\u{26A7}\u{FE0F}\u{1F308}\u{1F38C}\u{1F3C1}\u{1F3F3}-\u{1F3F4}\u{1F6A9}\u{E0062}-\u{E007F}\u{1FA00}-\u{1FAFF}])/gu;
+        document.body.innerHTML = document.body.innerHTML.replace(emojiRegex, '<span class="emoji">$1</span>');
+      });
+    </script></head>
+  <body a="auto">
+    <main class="content" aria-label="Content">
+      <div class="w">
+        <!-- Page content -->
+        <h1 id="mold-">mold 🍄</h1>
+
+<p><strong>A minimal optimized lightweight design.</strong></p>
+
+<p>Inspired from <a href="https://github.com/riggraz/no-style-please">no-style-please</a> and <a href="https://github.com/owickstrom/the-monospace-web">the-monospace-web</a>.</p>
+
+<blockquote>
+  <p><strong>“Simplicity is the ultimate sophistication.”</strong><br />
+– Leonardo da Vinci</p>
+</blockquote>
+
+<h2 id="features-">Features ✨</h2>
+
+<ul>
+  <li>⚡ Fast</li>
+  <li>🌓 Light and dark theme</li>
+  <li>📱 Responsive</li>
+  <li>📖 Content-first (typography optimized for maximum readability)</li>
+  <li>🔍 SEO optimized (uses Jekyll SEO Tag)</li>
+  <li>📰 RSS feed (uses Jekyll Feed)</li>
+  <li>➗ Mathjax support</li>
+  <li>🧜 Mermaid support</li>
+</ul>
+
+<p>Explore all the features:</p>
+
+<ul>
+  <li>🌟 <a href="features/static">Static Land</a> - Journey through the structured and stable elements.</li>
+  <li>🌌 <a href="features/dynamic">Dynamic Land</a> - Discover the interactive elements and magical interfaces.</li>
+</ul>
+
+<h2 id="usage-">Usage 🛠</h2>
+
+<h3 id="setup-">Setup 🏗</h3>
+
+<ul>
+  <li>Create a github pages repo, see <a href="https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site">steps</a>.</li>
+  <li>Add a <code class="language-plaintext highlighter-rouge">_config.yml</code> file (or copy the one from this repo), and insert below line:
+    <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="na">remote-theme</span><span class="pi">:</span> <span class="s">yree/mold</span>
+</code></pre></div>    </div>
+  </li>
+  <li>See site settings to further customize the theme.</li>
+</ul>
+
+<h3 id="organization-">Organization 📂</h3>
+<ul>
+  <li>The theme operates on the WYWIWYS (wee-wee-wiz) principle.</li>
+  <li>The <code class="language-plaintext highlighter-rouge">README.md</code> at the repo root acts as the index for the GitHub Page.</li>
+  <li>To create more posts add <code class="language-plaintext highlighter-rouge">.md</code> files and folders to your repo.</li>
+  <li>Link these <code class="language-plaintext highlighter-rouge">.md</code> files across each other (refer to this repo structure).</li>
+</ul>
+
+<h3 id="pro-tips-">Pro tips 💡</h3>
+
+<h4 id="site-settings">Site Settings</h4>
+
+<ul>
+  <li>Customize your blog further by editing the <code class="language-plaintext highlighter-rouge">_config.yml</code> file.</li>
+  <li>Adjust the blog’s name, author, theme appearance, date formatting, and more.</li>
+  <li>The file includes comments to guide you through each customizable field.</li>
+</ul>
+
+<h4 id="dark-mode-for-images">Dark Mode for Images</h4>
+
+<ul>
+  <li>The theme’s dark mode is achieved through CSS <code class="language-plaintext highlighter-rouge">invert()</code> function.</li>
+  <li>Images aren’t inverted by default to maintain expected appearance.</li>
+  <li>Apply <code class="language-plaintext highlighter-rouge">class="ioda"</code> to specific images to force color inversion.</li>
+</ul>
+
+<h2 id="development-">Development 📦</h2>
+
+<ul>
+  <li>Run <code class="language-plaintext highlighter-rouge">bundle install</code> to set up your environment.</li>
+  <li>Start the server with <code class="language-plaintext highlighter-rouge">bundle exec jekyll serve</code>.</li>
+  <li>Modify your theme and content as needed, preview your theme at <a href="http://localhost:4000">http://localhost:4000</a>.</li>
+  <li>Only specific files and directories are bundled. Adjust <code class="language-plaintext highlighter-rouge">mold.gemspec</code> to include custom directories if necessary.</li>
+</ul>
+
+<h2 id="contributing-">Contributing 🤝</h2>
+
+<p>Feel free to report bugs or send pull requests over on GitHub at <a href="https://github.com/yree/mold">yree/mold</a>. Please adhere to the <a href="http://contributor-covenant.org/">Contributor Covenant</a> code of conduct.</p>
+
+<h2 id="license-">License 📃</h2>
+
+<p>The theme is available as open source under the terms of the <a href="LICENSE">MIT License</a>.</p>
+
+      </div>
+    </main>
+    <!-- Goat Counter --></body>
+  <!-- Footer -->
+  <footer>
+    <div class="w">
+            <a href="http://localhost:4000">Yree</a> —
+          
+          
+            <a href="https://github.com/yree/mold">@yree/mold</a> —
+          
+          <a href="https://yree.io/mold">molded</a> for you 🫶</div>
+  </footer>
+</html>
